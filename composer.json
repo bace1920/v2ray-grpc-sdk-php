@@ -1,0 +1,20 @@
+{
+    "name": "bluehead/v2ray-grpc-client",
+    "description": "v2ray gRPC client, generate from .proto by protoc",
+    "type": "library",
+    "require": {
+        "php": ">=7.0.0",
+        "google/protobuf": "^3.6",
+        "grpc/grpc": "^1.15",
+        "ext-grpc": "^1.15"
+    },
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "enl\\V2ray\\": "Enl/V2ray/"
+        }
+    }
+}
