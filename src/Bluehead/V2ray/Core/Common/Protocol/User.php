@@ -43,7 +43,7 @@ class User extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Common\Protocol\User::initOnce();
+        \GPBMetadata\V2ray\Common\Protocol\User::initOnce();
         parent::__construct($data);
     }
 

@@ -41,7 +41,7 @@ class Config extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Transport\Internet\Domainsocket\Config::initOnce();
+        \GPBMetadata\V2ray\Transport\Internet\Domainsocket\Config::initOnce();
         parent::__construct($data);
     }
 

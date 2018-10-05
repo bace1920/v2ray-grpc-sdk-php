@@ -44,7 +44,7 @@ class Certificate extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Transport\Internet\Tls\Config::initOnce();
+        \GPBMetadata\V2ray\Transport\Internet\Tls\Config::initOnce();
         parent::__construct($data);
     }
 

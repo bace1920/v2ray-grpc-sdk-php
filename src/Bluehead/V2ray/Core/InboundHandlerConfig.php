@@ -49,7 +49,7 @@ class InboundHandlerConfig extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Config::initOnce();
+        \GPBMetadata\V2ray\Config::initOnce();
         parent::__construct($data);
     }
 

@@ -30,7 +30,7 @@ class NetworkList extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Common\Net\Network::initOnce();
+        \GPBMetadata\V2ray\Common\Net\Network::initOnce();
         parent::__construct($data);
     }
 

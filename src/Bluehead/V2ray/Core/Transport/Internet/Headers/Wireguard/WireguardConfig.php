@@ -23,7 +23,7 @@ class WireguardConfig extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Transport\Internet\Headers\Wireguard\Config::initOnce();
+        \GPBMetadata\V2ray\Transport\Internet\Headers\Wireguard\Config::initOnce();
         parent::__construct($data);
     }
 

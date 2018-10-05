@@ -28,7 +28,7 @@ class Config extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Proxy\Blackhole\Config::initOnce();
+        \GPBMetadata\V2ray\Proxy\Blackhole\Config::initOnce();
         parent::__construct($data);
     }
 

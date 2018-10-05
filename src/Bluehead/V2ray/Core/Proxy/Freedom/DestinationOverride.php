@@ -28,7 +28,7 @@ class DestinationOverride extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Proxy\Freedom\Config::initOnce();
+        \GPBMetadata\V2ray\Proxy\Freedom\Config::initOnce();
         parent::__construct($data);
     }
 

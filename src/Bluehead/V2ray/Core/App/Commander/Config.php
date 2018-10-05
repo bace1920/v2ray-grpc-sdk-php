@@ -41,7 +41,7 @@ class Config extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\App\Commander\Config::initOnce();
+        \GPBMetadata\V2ray\App\Commander\Config::initOnce();
         parent::__construct($data);
     }
 

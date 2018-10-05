@@ -30,7 +30,7 @@ class TTI extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Transport\Internet\Kcp\Config::initOnce();
+        \GPBMetadata\V2ray\Transport\Internet\Kcp\Config::initOnce();
         parent::__construct($data);
     }
 

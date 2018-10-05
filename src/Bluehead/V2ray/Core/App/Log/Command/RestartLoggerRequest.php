@@ -23,7 +23,7 @@ class RestartLoggerRequest extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\App\Log\Command\Config::initOnce();
+        \GPBMetadata\V2ray\App\Log\Command\Config::initOnce();
         parent::__construct($data);
     }
 

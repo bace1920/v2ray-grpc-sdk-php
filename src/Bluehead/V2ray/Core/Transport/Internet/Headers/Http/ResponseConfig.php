@@ -38,7 +38,7 @@ class ResponseConfig extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Transport\Internet\Headers\Http\Config::initOnce();
+        \GPBMetadata\V2ray\Transport\Internet\Headers\Http\Config::initOnce();
         parent::__construct($data);
     }
 

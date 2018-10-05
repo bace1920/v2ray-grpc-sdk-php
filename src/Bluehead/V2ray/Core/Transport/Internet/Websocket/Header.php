@@ -33,7 +33,7 @@ class Header extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Transport\Internet\Websocket\Config::initOnce();
+        \GPBMetadata\V2ray\Transport\Internet\Websocket\Config::initOnce();
         parent::__construct($data);
     }
 

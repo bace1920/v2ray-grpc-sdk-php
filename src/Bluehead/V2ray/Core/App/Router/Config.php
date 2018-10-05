@@ -33,7 +33,7 @@ class Config extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\App\Router\Config::initOnce();
+        \GPBMetadata\V2ray\App\Router\Config::initOnce();
         parent::__construct($data);
     }
 

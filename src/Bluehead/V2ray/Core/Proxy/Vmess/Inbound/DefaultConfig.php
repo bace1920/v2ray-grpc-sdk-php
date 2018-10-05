@@ -33,7 +33,7 @@ class DefaultConfig extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Proxy\Vmess\Inbound\Config::initOnce();
+        \GPBMetadata\V2ray\Proxy\Vmess\Inbound\Config::initOnce();
         parent::__construct($data);
     }
 

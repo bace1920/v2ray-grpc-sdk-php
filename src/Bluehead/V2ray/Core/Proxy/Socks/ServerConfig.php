@@ -53,7 +53,7 @@ class ServerConfig extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Proxy\Socks\Config::initOnce();
+        \GPBMetadata\V2ray\Proxy\Socks\Config::initOnce();
         parent::__construct($data);
     }
 

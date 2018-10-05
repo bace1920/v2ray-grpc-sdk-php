@@ -47,7 +47,7 @@ class Account extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Proxy\Vmess\Account::initOnce();
+        \GPBMetadata\V2ray\Proxy\Vmess\Account::initOnce();
         parent::__construct($data);
     }
 

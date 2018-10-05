@@ -40,7 +40,7 @@ class Endpoint extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Common\Net\Destination::initOnce();
+        \GPBMetadata\V2ray\Common\Net\Destination::initOnce();
         parent::__construct($data);
     }
 

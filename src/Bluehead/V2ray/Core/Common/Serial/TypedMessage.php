@@ -41,7 +41,7 @@ class TypedMessage extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Common\Serial\TypedMessage::initOnce();
+        \GPBMetadata\V2ray\Common\Serial\TypedMessage::initOnce();
         parent::__construct($data);
     }
 

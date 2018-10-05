@@ -30,7 +30,7 @@ class IPOrDomain extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Common\Net\Address::initOnce();
+        \GPBMetadata\V2ray\Common\Net\Address::initOnce();
         parent::__construct($data);
     }
 

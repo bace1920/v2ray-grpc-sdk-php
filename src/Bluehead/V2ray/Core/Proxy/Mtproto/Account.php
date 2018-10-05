@@ -28,7 +28,7 @@ class Account extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Proxy\Mtproto\Config::initOnce();
+        \GPBMetadata\V2ray\Proxy\Mtproto\Config::initOnce();
         parent::__construct($data);
     }
 

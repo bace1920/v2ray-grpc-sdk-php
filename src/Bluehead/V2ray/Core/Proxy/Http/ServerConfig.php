@@ -45,7 +45,7 @@ class ServerConfig extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Proxy\Http\Config::initOnce();
+        \GPBMetadata\V2ray\Proxy\Http\Config::initOnce();
         parent::__construct($data);
     }
 

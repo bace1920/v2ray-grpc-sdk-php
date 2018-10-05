@@ -49,7 +49,7 @@ class TransportConfig extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Transport\Internet\Config::initOnce();
+        \GPBMetadata\V2ray\Transport\Internet\Config::initOnce();
         parent::__construct($data);
     }
 

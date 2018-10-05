@@ -23,7 +23,7 @@ class ConnectionConfig extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\Transport\Internet\Headers\Noop\Config::initOnce();
+        \GPBMetadata\V2ray\Transport\Internet\Headers\Noop\Config::initOnce();
         parent::__construct($data);
     }
 

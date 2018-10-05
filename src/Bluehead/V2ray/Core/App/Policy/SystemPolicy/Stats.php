@@ -33,7 +33,7 @@ class Stats extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\App\Policy\Config::initOnce();
+        \GPBMetadata\V2ray\App\Policy\Config::initOnce();
         parent::__construct($data);
     }
 
