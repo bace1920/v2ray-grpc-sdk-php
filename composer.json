@@ -15,7 +15,7 @@
     "autoload": {
         "psr-4": {
             "Bluehead\\V2ray\\": "src/Bluehead/V2ray/",
-            "GBPMetadata\\V2ray": "src/GPBMetadata/"
+            "GBPMetadata\\V2ray\\": "src/GPBMetadata/"
         }
     }
 }
