@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Bluehead\\V2ray\\": "Bluehead/V2ray/"
+            "Bluehead\\V2ray\\": "src/Bluehead/V2ray/"
         }
     }
 }
