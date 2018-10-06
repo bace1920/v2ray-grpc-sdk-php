@@ -1,9 +1,9 @@
 #!/bin/sh
 # make protoc-php-plugin which used to gen php code
-#git clone -b $(curl -L https://grpc.io/release) https://github.com/grpc/grpc
+git clone -b $(curl -L https://grpc.io/release) https://github.com/grpc/grpc
 cd grpc
-#git submodule update --init
-#make grpc_php_plugin
+git submodule update --init
+make grpc_php_plugin
 
 cd ../
 git clone https://github.com/v2ray/v2ray-core.git
@@ -18,6 +18,8 @@ sed -ir 's:package v2ray.core:package bluehead.v2ray.core:' $(find . -type f -na
 ./.dev/protoc/macos/protoc --proto_path=./ --php_out=../src  --grpc_out=../src --plugin=protoc-gen-grpc=./../grpc/bins/opt/grpc_php_plugin $(find . -type f -name "*.proto")
 
 cd ../src
+#更改服务名称
 sed -i '' 's:/bluehead.v2ray.core:/v2ray.core:' $(find . -type f -name "*.php")
+#修正GPBMetadata的名称空间
 sed -i '' 's:GPBMetadata:Bluehead\\V2ray\\GPBMetadata:' $(find . -type f -name "*.php")
 echo finished
