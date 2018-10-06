@@ -18,5 +18,6 @@ sed -ir 's:package v2ray.core:package bluehead.v2ray.core:' $(find . -type f -na
 ./.dev/protoc/macos/protoc --proto_path=./ --php_out=../src  --grpc_out=../src --plugin=protoc-gen-grpc=./../grpc/bins/opt/grpc_php_plugin $(find . -type f -name "*.proto")
 
 cd ../src
+sed -i '' 's:/bluehead.v2ray.core:/v2ray.core:' $(find . -type f -name "*.php")
 sed -i '' 's:GPBMetadata:Bluehead\\V2ray\\GPBMetadata:' $(find . -type f -name "*.php")
 echo finished
