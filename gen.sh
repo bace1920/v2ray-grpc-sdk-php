@@ -14,6 +14,9 @@ cd ./v2ray-core
 sed -ir 's:import "v2ray.com/core/:import ":' $(find . -type f -name "*.proto")
 sed -ir 's:package v2ray.core:package bluehead.v2ray.core:' $(find . -type f -name "*.proto")
 
-./.dev/protoc/macos/protoc --proto_path=./ --php_out=../src  --grpc_out=../src --plugin=protoc-gen-grpc=./../grpc/bins/opt/grpc_php_plugin ./**/*.proto
+#./.dev/protoc/macos/protoc --proto_path=./ --php_out=../src  --grpc_out=../src --plugin=protoc-gen-grpc=./../grpc/bins/opt/grpc_php_plugin ./**/*.proto
+./.dev/protoc/macos/protoc --proto_path=./ --php_out=../src  --grpc_out=../src --plugin=protoc-gen-grpc=./../grpc/bins/opt/grpc_php_plugin $(find . -type f -name "*.proto")
 
+cd ../src
+sed -i '' 's:GPBMetadata:Bluehead\\V2ray\\GPBMetadata:' $(find . -type f -name "*.php")
 echo finished
